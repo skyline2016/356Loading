@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Shopping extends CI_Controller {
 
 	public function __construct()
 	{
 		parent::__construct();
 		$this->lang->load('home',$_SESSION['user_lang']);
+		$this->lang->load('shopping',$_SESSION['user_lang']);
 	}
 	public function index()
 	{
@@ -24,6 +25,6 @@ class Welcome extends CI_Controller {
 			),
 		);
 		$this->load->view('header',$pageData);
-		$this->load->view('home',$pageData);
+		$this->load->view('shopping',$pageData);
 	}
 }

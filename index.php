@@ -55,6 +55,9 @@
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
+	session_start();
+	$_SESSION['login'] = 0; //yes = 1, no = 0
+	$_SESSION['user_lang'] = 'en';
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
