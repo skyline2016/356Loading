@@ -25,5 +25,14 @@ class Login extends CI_Controller {
 		);
 		$this->load->view('header',$pageData);
 		$this->load->view('login',$pageData);
+
+		if (isset($_POST['submit'])) {
+			$_SESSION['login'] = TRUE; // Initializing Session
+			echo "<script>window.location = '" . base_url() . "'</script>";
+		}
+	}
+	public function logout(){
+		$_SESSION['login'] = FALSE;
+		 echo "<script>window.location = 'http://localhost'</script>";
 	}
 }

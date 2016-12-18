@@ -32,11 +32,11 @@ foreach ($css_files as $css) {
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="scroll active"><a href="<?php echo base_url()?>"><?php echo lang('home')?></a></li>
-                    <?php if ($_SESSION['login'] == 0){
+                    <?php if ($_SESSION['login'] == FALSE){
                       echo '<li class="scroll"><a href="' . base_url() .'login">' . lang('login') . '</a></li>';
                       echo '<li class="scroll"><a href="">' . lang('sign_up') . '</a></li>';
                     } else{
-                      echo '<li class="scroll"><a href="">Logined</a></li>';
+                      echo '<li class="scroll"><a href="'.base_url() . 'login/logout">Logout</a></li>';
                     }
                     ?>
                     <li class="scroll"><a href=""><?php echo lang('design_sticker')?></a></li>
