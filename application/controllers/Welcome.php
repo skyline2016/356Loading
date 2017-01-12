@@ -26,4 +26,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('header',$pageData);
 		$this->load->view('home',$pageData);
 	}
+
+	public function lang_switch()
+	{
+		if ($_SESSION['user_lang'] == 'en'){
+			$_SESSION['user_lang'] = 'zh';
+		}else {
+			$_SESSION['user_lang'] = 'en';
+		}
+		echo "<script>window.location = '" . base_url() . "'</script>";
+	}
 }

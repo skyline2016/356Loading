@@ -32,7 +32,7 @@ foreach ($css_files as $css) {
                                 <div class="carousel-content">
                                     <h2><span>Loading </span><?php echo lang('description_1')?></h2>
                                     <p><?php echo lang('pageTitle')?> </p>
-                                    <a class="btn btn-primary btn-lg" href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a>
+                                    <a class="btn btn-primary btn-lg" href=""><?php echo lang('read_more')?></a>
                                 </div>
                             </div>
                         </div>
@@ -45,9 +45,9 @@ foreach ($css_files as $css) {
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2>Sales now</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <a class="btn btn-primary btn-lg" href="">Read More</a>
+                                    <h2><?php echo lang('description_2')?></h2>
+                                    <p><?php echo lang('description_2_detail')?></p>
+                                    <a class="btn btn-primary btn-lg" href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a>
                                 </div>
                             </div>
                         </div>
@@ -62,8 +62,8 @@ foreach ($css_files as $css) {
     <section id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Awesome Features</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown"><?php echo lang('how_to_design')?></h2>
+                <p class="text-center wow fadeInDown"><?php echo lang('design_des')?></p>
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
@@ -72,11 +72,11 @@ foreach ($css_files as $css) {
                 <div class="col-sm-6">
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-line-chart"></i>
+                            <i class="fa fa-pencil"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">UX design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading"><?php echo lang('design_step_1')?></h4>
+                            <p><?php echo lang('design_step_1_des')?></p>
                         </div>
                     </div>
 
@@ -85,14 +85,14 @@ foreach ($css_files as $css) {
                             <i class="fa fa-cubes"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">UI design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading"><?php echo lang('design_step_2')?></h4>
+                            <p><?php echo lang('design_step_2_des')?></p>
                         </div>
                     </div>
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
+                            <i class="fa fa-sort-numeric-asc"></i>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">SEO Services</h4>
@@ -102,7 +102,7 @@ foreach ($css_files as $css) {
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
+                            <i class="fa fa-money"></i>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">SEO Services</h4>
@@ -112,96 +112,106 @@ foreach ($css_files as $css) {
                 </div>
             </div>
         </div>
-    </section>
+      </section><!--features-->
 
-
-
-    <section id="services" >
+    <section id="portfolio">
         <div class="container">
-
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown"><?php echo lang('shop_list')?></h2>
+                <p class="text-center wow fadeInDown"><?php echo lang('shop_des')?></p>
             </div>
 
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UX design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item creative">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 1</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.portfolio-item-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UI design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="portfolio-item corporate portfolio">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 2</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.portfolio-item-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="portfolio-item creative">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 3</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.portfolio-item-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">iOS App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 4</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.portfolio-item-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-language"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Android App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="portfolio-item creative portfolio">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 5</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.portfolio-item-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Win App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 5</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-                    </div><!--/.col-md-4-->
-                </div>
-            </div><!--/.row-->
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item creative portfolio">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 7</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Item 8</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
         </div><!--/.container-->
-    </section><!--/#services-->
-
+    </section><!--/#portfolio-->
 
 
     <section id="about">
@@ -251,129 +261,6 @@ foreach ($css_files as $css) {
     </section><!--/#about-->
 
 
-
-
-    <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Pricing Table</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $39
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Starter
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">ORDER NOW</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $69
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Business
-                                </div>
-                            </li>
-                            <li><strong>3</strong> DOMAIN</li>
-                            <li><strong>300GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-default" href="#">ORDER NOW</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $99
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Pro
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">ORDER NOW</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $199
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Ultra
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>1000GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">ORDER NOW</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#pricing-->
-
-
     <section id="get-in-touch">
         <div class="container">
             <div class="section-header">
@@ -385,7 +272,7 @@ foreach ($css_files as $css) {
 
 
     <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>
+        <div id="google-map" style="height:650px" data-latitude="22.31615429" data-longitude="114.179826"></div>
         <div class="container-wrapper">
             <div class="container">
                 <div class="row">
@@ -394,7 +281,7 @@ foreach ($css_files as $css) {
                             <h3>Contact Info</h3>
 
                             <address>
-                              <strong>Twitter, Inc.</strong><br>
+                              <strong>The Open University of Hong Kong</strong><br>
                               795 Folsom Ave, Suite 600<br>
                               San Francisco, CA 94107<br>
                               <abbr title="Phone">P:</abbr> (123) 456-7890
@@ -431,15 +318,7 @@ foreach ($css_files as $css) {
                 <div class="col-sm-6">
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>

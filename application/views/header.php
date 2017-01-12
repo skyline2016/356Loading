@@ -31,7 +31,7 @@ foreach ($css_files as $css) {
 
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="scroll active"><a href="<?php echo base_url()?>"><?php echo lang('home')?></a></li>
+                    <li class="scroll"><a href="<?php echo base_url()?>"><?php echo lang('home')?></a></li>
                     <?php if ($_SESSION['login'] == FALSE){
                       echo '<li class="scroll"><a href="' . base_url() .'login">' . lang('login') . '</a></li>';
                       echo '<li class="scroll"><a href="">' . lang('sign_up') . '</a></li>';
@@ -41,6 +41,7 @@ foreach ($css_files as $css) {
                     ?>
                     <li class="scroll"><a href=""><?php echo lang('design_sticker')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
+                    <li class="scroll"><a href="<?php echo base_url() . 'welcome/lang_switch'?>"><?php if ($current_lang == 'en'){echo '繁中';}else {echo 'English';}?></a></li>
                 </ul>
             </div>
         </div><!--/.container-->
