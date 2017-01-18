@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Register extends CI_Controller {
 
 	public function __construct()
 	{
@@ -24,31 +24,16 @@ class Login extends CI_Controller {
 			),
 		);
 		$this->load->view('header',$pageData);
-		$this->load->view('login',$pageData);
+		$this->load->view('register',$pageData);
 
 	}
 
-	public function login(){
+	public function register(){
 		if($_POST){
-			echo "success";
 			$_SESSION['login'] = TRUE; // Initializing Session
 			$_SESSION['username']=$_POST['username'];
-			echo $_SESSION['username'];
-		}
-		else
-			echo "failed";
-	}
-
-	public function logout(){
-		$_SESSION['login'] = FALSE;
-		session_unset();
-		 echo "<script>window.location = '" . base_url() . "'</script>";
-	}
-
-	public function forgot_password()
-	{
-		if($_POST)
 			echo "success";
+		}
 		else
 			echo "failed";
 	}

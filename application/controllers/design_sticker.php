@@ -29,7 +29,7 @@ class Design_sticker extends CI_Controller {
 			$this->load->view('design_sticker',$pageData);
 		}
 		else {
-			echo "<script>window.location = '" . base_url() . "/login'</script>";
+			echo "<script>window.location = '" . base_url() . "login'</script>";
 		}
 	}
 }
