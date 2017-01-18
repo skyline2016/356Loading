@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Design_sticker extends CI_Controller {
 
 	public function __construct()
 	{
 		parent::__construct();
 		$this->lang->load('home',$_SESSION['user_lang']);
+		$this->lang->load('shopping',$_SESSION['user_lang']);
 	}
 	public function index()
 	{
@@ -24,15 +25,11 @@ class Login extends CI_Controller {
 			),
 		);
 		$this->load->view('header',$pageData);
-		$this->load->view('login',$pageData);
-
-		if (isset($_POST['submit'])) {
-			$_SESSION['login'] = TRUE; // Initializing Session
-			echo "<script>window.location = '" . base_url() . "'</script>";
+		if($_SESSION['login']){
+			$this->load->view('design_sticker',$pageData);
 		}
-	}
-	public function logout(){
-		$_SESSION['login'] = FALSE;
-		 echo "<script>window.location = '" . base_url() . "'</script>";
+		else {
+			echo "<script>window.location = '" . base_url() . "/login'</script>";
+		}
 	}
 }

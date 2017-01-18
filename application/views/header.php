@@ -39,7 +39,7 @@ foreach ($css_files as $css) {
                       echo '<li class="scroll"><a href="'.base_url() . 'login/logout">Logout</a></li>';
                     }
                     ?>
-                    <li class="scroll"><a href=""><?php echo lang('design_sticker')?></a></li>
+                    <li class="scroll"><a href="<?php echo base_url() . 'design_sticker'?>"><?php echo lang('design_sticker')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'welcome/lang_switch'?>"><?php if ($current_lang == 'en'){echo '繁中';}else {echo 'English';}?></a></li>
                 </ul>

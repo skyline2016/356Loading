@@ -195,10 +195,6 @@
 
 
 <body>
-
-
-
-
 	<div id="main"><!-- Defining submain content section -->
 		<section id="content"><!-- Defining the content section #2 -->
 			<div id="left">
@@ -255,46 +251,44 @@
 								<span class="st">Price:</span><strong>$550.00</strong>
 							</div>
 							<div class="actions">
-<a href="#">Details</a>
-<a href="#">Add to cart</a>
-</div>
-</div>
-</li>
-<li>
-<div class="img"><a href="#"><img class ="img-style" alt="" src="images/portfolio/05.jpg"></a></div>
-<div class="info">
-<a class="title" href="#">Product 5</a>
-<p>long description here 2</p>
-<div class="price">
-<span class="st">Price:</span><strong>$250.00</strong>
-</div>
-<div class="actions">
-<a href="#">Details</a>
-<a href="#">Add to cart</a>
-</div>
-</div>
-</li>
-<li>
-<div class="img"><a href="#"><img class ="img-style" alt="" src="images/portfolio/06.jpg"></a></div>
-<div class="info">
-<a class="title" href="#">Product 6</a>
-<p>long description here 3</p>
-<div class="price">
-<span class="st">Price:</span><strong>$350.00</strong>
-</div>
-<div class="actions">
-<a href="#">Details</a>
-<a href="#">Add to cart</a>
-</div>
-</div>
-</li>
-</ul>
-</div>
+								<a href="#">Details</a>
+								<a href="#">Add to cart</a>
+							</div>
+						</div>
+						</li>
+						<li>
+							<div class="img"><a href="#"><img class ="img-style" alt="" src="images/portfolio/05.jpg"></a></div>
+							<div class="info">
+								<a class="title" href="#">Product 5</a>
+								<p>long description here 2</p>
+								<div class="price">
+									<span class="st">Price:</span><strong>$250.00</strong>
+								</div>
+								<div class="actions">
+									<a href="#">Details</a>
+									<a href="#">Add to cart</a>
+								</div>
+								</div>
+						</li>
+						<li>
+							<div class="img"><a href="#"><img class ="img-style" alt="" src="images/portfolio/06.jpg"></a></div>
+							<div class="info">
+								<a class="title" href="#">Product 6</a>
+								<p>long description here 3</p>
+									<div class="price">
+								<span class="st">Price:</span><strong>$350.00</strong>
+									</div>
+								<div class="actions">
+									<a href="#">Details</a>
+									<a href="#">Add to cart</a>
+								</div>
+							</div>
+						</li>
+								</ul>
+								</div>
 
 </section>
 </div>
-
-
 
 </body>
 </html>

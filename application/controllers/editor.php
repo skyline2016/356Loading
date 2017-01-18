@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Editor extends CI_Controller {
 
 	public function __construct()
 	{
 		parent::__construct();
 		$this->lang->load('home',$_SESSION['user_lang']);
+		$this->lang->load('shopping',$_SESSION['user_lang']);
 	}
 	public function index()
 	{
@@ -23,16 +24,18 @@ class Login extends CI_Controller {
 				base_url() . 'css/responsive.css',
 			),
 		);
-		$this->load->view('header',$pageData);
-		$this->load->view('login',$pageData);
-
-		if (isset($_POST['submit'])) {
-			$_SESSION['login'] = TRUE; // Initializing Session
-			echo "<script>window.location = '" . base_url() . "'</script>";
-		}
+		$this->load->view('editor',$pageData);
 	}
-	public function logout(){
-		$_SESSION['login'] = FALSE;
-		 echo "<script>window.location = '" . base_url() . "'</script>";
+	public function file_handler()
+	{
+		$img = $_POST["img"];
+		echo str_replace("data:image/png;base64,","",$img);
+
+		$content = base64_decode(str_replace("data:image/png;base64,","",$img));
+
+		$file = fopen("./img/test_img.png", "wb");
+
+		fwrite($file, $content);
+ 		fclose($file);
 	}
 }
