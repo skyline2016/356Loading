@@ -32,7 +32,7 @@ foreach ($css_files as $css) {
                                 <div class="carousel-content">
                                     <h2><span>Loading </span><?php echo lang('description_1')?></h2>
                                     <p><?php echo lang('pageTitle')?> </p>
-                                    <a class="btn btn-primary btn-lg" href=""><?php echo lang('read_more')?></a>
+                                    <a class="btn btn-primary btn-lg" href="<?php echo base_url() . 'design_sticker'?>"><?php echo lang('design_sticker')?></a>
                                 </div>
                             </div>
                         </div>
@@ -92,11 +92,11 @@ foreach ($css_files as $css) {
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-sort-numeric-asc"></i>
+                            <i class="fa fa-adjust"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading"><?php echo lang('design_step_3')?></h4>
+                            <p><?php echo lang('design_step_3_des')?></p>
                         </div>
                     </div>
 
@@ -105,8 +105,8 @@ foreach ($css_files as $css) {
                             <i class="fa fa-money"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading"><?php echo lang('design_step_4')?></h4>
+                            <p><?php echo lang('design_step_4_des')?></p>
                         </div>
                     </div>
                 </div>
@@ -218,42 +218,29 @@ foreach ($css_files as $css) {
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">About Us</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown"><?php echo lang('about_us')?></h2>
             </div>
 
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                    <h3 class="column-title">Video Intro</h3>
+                    <h3 class="column-title"><?php echo lang('video_intro')?></h3>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="//player.vimeo.com/video/58093852?title=0&amp;byline=0&amp;portrait=0&amp;color=e79b39" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VD7kb778sqU" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Multi Capability</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
+                    <h3 class="column-title"><?php echo lang('company_aim')?></h3>
+                    <?php echo lang('company_mission')?>
                     <div class="row">
                         <div class="col-sm-6">
                             <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> Ipsum is simply dummy</li>
-                                <li><i class="fa fa-check-square"></i> When an unknown</li>
+                                <li><i class="fa fa-check-square"></i> <?php echo lang('mission1')?></li>
+                                <li><i class="fa fa-check-square"></i> <?php echo lang('mission2')?></li>
+                                <li><i class="fa fa-check-square"></i> <?php echo lang('mission3')?></li>
                             </ul>
                         </div>
-
-                        <div class="col-sm-6">
-                            <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> The printing and typesetting</li>
-                                <li><i class="fa fa-check-square"></i> Lorem Ipsum has been</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a class="btn btn-primary" href="#">Learn More</a>
 
                 </div>
             </div>
@@ -264,8 +251,8 @@ foreach ($css_files as $css) {
     <section id="get-in-touch">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Get in Touch</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown"><?php echo lang('get_in_touch')?></h2>
+                <p class="text-center wow fadeInDown"><?php echo lang('get_in_touch_info')?></p>
             </div>
         </div>
     </section><!--/#get-in-touch-->
@@ -278,13 +265,11 @@ foreach ($css_files as $css) {
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-8">
                         <div class="contact-form">
-                            <h3>Contact Info</h3>
+                            <h3><?php echo lang('contact_info')?></h3>
 
                             <address>
-                              <strong>The Open University of Hong Kong</strong><br>
-                              795 Folsom Ave, Suite 600<br>
-                              San Francisco, CA 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                              <?php echo lang('address')?>
+                              <?php echo lang('phone')?>
                             </address>
 
                             <form id="main-contact-form" name="contact-form" method="post" action="#">
@@ -313,7 +298,7 @@ foreach ($css_files as $css) {
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                    &copy; 2017 Loading. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
