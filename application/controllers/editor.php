@@ -32,8 +32,10 @@ class Editor extends CI_Controller {
 		echo str_replace("data:image/png;base64,","",$img);
 
 		$content = base64_decode(str_replace("data:image/png;base64,","",$img));
-
-		$file = fopen("./img/test_img.png", "wb");
+		if (!file_exists('./img/'.$_SESSION['username'])) {
+	    mkdir('./img/'.$_SESSION['username'], 0777, true);
+		}
+		$file = fopen("./img/".$_SESSION['username']."/".date('Y_m_d_h_i_s').".png", "wb");
 
 		fwrite($file, $content);
  		fclose($file);

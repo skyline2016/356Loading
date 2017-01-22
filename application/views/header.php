@@ -29,7 +29,7 @@ foreach ($css_files as $css) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url()?>"><img src="images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="<?php echo base_url()?>"><img src="<?php echo base_url() . 'images/logo.png'?>" alt="logo"></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-right">
@@ -44,12 +44,14 @@ foreach ($css_files as $css) {
                     <li class="scroll"><a href="<?php echo base_url() . 'design_sticker'?>"><?php echo lang('design_sticker')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'welcome/lang_switch'?>"><?php if ($current_lang == 'en'){echo '繁中';}else {echo 'English';}?></a></li>
+                    <li class="scroll"><a id="cart" data-toggle="modal" data-target="#cart_modal" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                 </ul>
             </div>
         </div><!--/.container-->
     </nav><!--/nav-->
 </body><!--/header-->
 
+<!-- Login Modal -->
 <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -133,6 +135,36 @@ foreach ($css_files as $css) {
   </div>
 </div>
 
+<!--Cart Modal -->
+<div class="modal fade" id="cart_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-xs-8">
+    			<div class="panel panel-info">
+    				<div class="panel-heading">
+    					<div class="panel-title">
+    						<div class="row">
+    							<div class="col-xs-6">
+    								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
+    							</div>
+    							<div class="col-xs-6">
+    								<button type="button" class="btn btn-primary btn-sm btn-block" data-dismiss="modal" aria-label="Close">
+    									<span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+    								</button>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="cart-body">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<?php echo '<script>var baseURL = "'. base_url() . '";</script>'; ?>
 <script>
     $(function(){
        $('#forgot-password-form').on('submit', function(e){
@@ -158,6 +190,11 @@ foreach ($css_files as $css) {
                     location.reload();
                 }
             });
+       });
+
+       $('#cart_modal').on('show.bs.modal', function(e){
+         event.preventDefault();
+         $(this).find(".cart-body").load(baseURL+"shopping/cart/list");
        });
     });
 </script>

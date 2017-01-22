@@ -7,6 +7,8 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->lang->load('home',$_SESSION['user_lang']);
+		if (!isset($_SESSION["cart_item"]))	$_SESSION["cart_item"]=array();
+		if (!isset($_SESSION["total"]))	$_SESSION["total"]=0;
 	}
 	public function index()
 	{
