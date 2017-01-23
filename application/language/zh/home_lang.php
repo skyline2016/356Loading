@@ -4,6 +4,7 @@ $lang['description_1'] = 'is the best sticker platform in the world!';
 $lang['read_more'] = 'Read More';
 $lang['home'] = '首頁';
 $lang['login'] = '登入';
+$lang['logout'] = '登出';
 $lang['sign_up'] = 'Sign Up Now!';
 $lang['design_sticker'] = 'Design Sticker';
 $lang['shopping'] = 'Our Design';
