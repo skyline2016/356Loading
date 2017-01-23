@@ -73,18 +73,18 @@ class Shopping extends CI_Controller {
 															<div class="row">
 															<div class="col-xs-2"><img class="img-responsive" src="'.base_url().'images/portfolio/'.$output[0].'.jpg" width="100" height="70" >
 															</div>
-															<div class="col-xs-4">
+															<div class="col-xs-5">
 																<h4 class="product-name"><strong>Macbook sticker design '.$output[0].'</strong></h4><h4><small>This sticker is for '.$output[1].'" macbook</small></h4>
 															</div>
-															<div class="col-xs-6">
+															<div class="col-xs-5">
 																<div class="col-xs-6 text-right">
-																	<h6><strong>70.00 <span class="text-muted">x</span></strong></h6>
+																	<h6><strong>$70.00 <span class="text-muted">x</span></strong></h6>
 																</div>
 																<div class="col-xs-4">
 																	<input type="text" class="form-control input-sm" value="'.$value["quantity"].'">
 																</div>
 																<div class="col-xs-2">
-																	<button type="button" class="btn btn-link btn-xs">
+																	<button type="button" onclick="delete_item(\''.$item_name.'\')" class="btn btn-link btn-xs">
 																		<span class="glyphicon glyphicon-trash"> </span>
 																	</button>
 																</div>
@@ -118,12 +118,19 @@ class Shopping extends CI_Controller {
 										';
 			break;
 			case 'remove':
-			if(!empty($_SESSION["cart_item"])) {
+			if(!empty($_SESSION["cart_item"]&&$remove_item!=0)) {
 			foreach($_SESSION["cart_item"] as $k => $v) {
-					if($item == $k)	unset($_SESSION["cart_item"][$k]);
+					if($remove_item == $k){
+						$_SESSION["total"]-=$_SESSION["cart_item"][$k]["quantity"]*70;
+						unset($_SESSION["cart_item"][$k]);
+					}
 					if(empty($_SESSION["cart_item"])) unset($_SESSION["cart_item"]);
 				}
 			}
+			break;
+			case 'clean':
+				unset($_SESSION["cart_item"]);
+				$_SESSION["total"]=0;
 			break;
 		}
 	}

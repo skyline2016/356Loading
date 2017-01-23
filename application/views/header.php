@@ -138,9 +138,7 @@ foreach ($css_files as $css) {
 <!--Cart Modal -->
 <div class="modal fade" id="cart_modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="container">
     	<div class="row">
-    		<div class="col-xs-8">
     			<div class="panel panel-info">
     				<div class="panel-heading">
     					<div class="panel-title">
@@ -159,13 +157,40 @@ foreach ($css_files as $css) {
     				<div class="cart-body">
     				</div>
     			</div>
-    		</div>
     	</div>
-    </div>
+
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <?php echo '<script>var baseURL = "'. base_url() . '";</script>'; ?>
 <script>
+
+function delete_item(item_name) {
+  swal({
+    title: "Are you sure?",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonText: "Yes",
+    cancelButtonText: "No",
+    closeOnConfirm: false,
+    closeOnCancel: false
+  },
+  function(isConfirm){
+    if (isConfirm) {
+      $.ajax({
+          url: "/shopping/cart/remove/"+item_name,
+          type: "GET",
+          success: function(data){
+              $("#cart_modal").find(".cart-body").load(baseURL+"shopping/cart/list");
+          }
+      });
+      swal("Deleted!", "Your item has been removed.", "success");
+    } else {
+      swal("Cancelled", "Your item is safe there :)", "error");
+    }
+  });
+}
+
     $(function(){
        $('#forgot-password-form').on('submit', function(e){
             e.preventDefault();

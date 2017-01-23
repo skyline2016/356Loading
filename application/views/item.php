@@ -1,7 +1,8 @@
 
 <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<style>
+<script src="<?php echo base_url()?>js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>css/sweetalert.css"><style>
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -36,9 +37,6 @@
 </style>
 <div class="container-fluid">
 	<div class="row">
-  <div class="col-md-2">
-  </div>
-  <div class="col-md-8">
     <div class="col-md-6 center-block">
       <br>
       <p class="text-center"><img src="<?php echo base_url() . 'images/portfolio/'.$item_name.'.jpg'?>" class="image-responsive"/></p>
@@ -76,7 +74,7 @@
          <span class="label label-success">61</span>
         </div>
         <div class="col-md-3">
-         <span class="monospaced">Write a Review</span>
+         <span class="monospaced" style="cursor:pointer;" id="write-review">Write a Review</span>
         </div>
       </div>
       <div class="row">
@@ -85,7 +83,7 @@
        </div>
       </div><!-- end row -->
       <hr>
-      <form id="cart_item-form" action="/shopping/cart" method="POST">
+      <form id="cart-item-form" action="/shopping/cart" method="POST">
       <input type="hidden" name="item_name" value="<?php echo $item_name?>">
       <div class="row">
        <div class="col-md-3 text-center">
@@ -211,9 +209,6 @@
          <br>
        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-2">
   </div>
 	</div>
 </div>
@@ -237,17 +232,47 @@ $(document).on('click', '.number-spinner button', function () {
 	}
 	btn.closest('.number-spinner').find('input').val(newVal);
 });
-$(function(){
-$('#cart_item-form').on('submit', function(e){
+
+$('#cart-item-form').on('submit', function(e){
      e.preventDefault();
      $.ajax({
          url: "/shopping/cart/add",
          type: "POST",
-         data: $("#cart_item-form").serialize(),
+         data: $("#cart-item-form").serialize(),
          success: function(data){
-          alert("success");
+           swal({
+             title: "Item Added!",
+             text: "Thx for your support!",
+             timer: 2000,
+             type: "success"
+           });
          }
      });
     });
+$( "#write-review" ).click(function() {
+  swal({
+    title: "Review",
+    text: "Write something comment:",
+    type: "input",
+    showCancelButton: true,
+    closeOnConfirm: false,
+    animation: "slide-from-top",
+    inputPlaceholder: "Write something"
+    },
+    function(inputValue){
+    if (inputValue === false) return false;
+
+    if (inputValue === "") {
+      swal.showInputError("You need to write something!");
+      return false
+    }
+
+    swal({
+      title: "Thank you!",
+      text: "Thx for your comment!",
+      timer: 2000,
+      type: "success"
+    });
 });
+  });
 </script>
