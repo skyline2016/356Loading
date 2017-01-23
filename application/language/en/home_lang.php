@@ -38,3 +38,4 @@ $lang['company_mission'] = '<p>Loading is a company aims to produce the best qua
 $lang['mission1'] = 'To produce the best quality product';
 $lang['mission2'] = 'To help people to express themselves';
 $lang['mission3'] = 'To make the world better.';
+$lang['account'] = 'Account';
