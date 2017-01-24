@@ -2,11 +2,31 @@
 $lang['pageTitle'] = 'Loading! Create your sticker now!';
 $lang['description_1'] = 'is the best sticker platform in the world!';
 $lang['read_more'] = 'Read More';
+//----header----//
 $lang['home'] = 'Home';
 $lang['login'] = 'Login';
+$lang['logout'] = 'Logout';
 $lang['sign_up'] = 'Sign Up Now!';
 $lang['design_sticker'] = 'Design Sticker';
 $lang['shopping'] = 'Our Design';
+//login model
+$lang['username'] = 'Username/E-mail';
+$lang['password'] = 'Password';
+$lang['confirm_password'] = 'Confirm Password';
+$lang['forget_password'] = '(forget password)';
+$lang['forgot_password'] = 'Forget password';
+$lang['register'] = 'Register';
+$lang['other_login'] = 'Login with social network account';
+$lang['email'] = 'Email address';
+$lang['submit'] = 'Submit';
+$lang['login_warning'] = 'Please login before using this function!';
+//cart
+$lang['cart'] = 'Cart';
+$lang['shopping_cart'] = 'Shopping Cart';
+$lang['continue'] = 'Continue Shopping';
+
+
+//main page
 $lang['description_2'] = 'Sales now!';
 $lang['description_2_detail'] = 'Whole brunch of designs are having discount!';
 $lang['how_to_design'] = 'how to design';
@@ -37,3 +57,13 @@ $lang['company_mission'] = '<p>Loading is a company aims to produce the best qua
 $lang['mission1'] = 'To produce the best quality product';
 $lang['mission2'] = 'To help people to express themselves';
 $lang['mission3'] = 'To make the world better.';
+//----------------------item list---------------------------------///
+$lang['item_name_1'] = 'Macbook sticker design 01';
+$lang['item_des'] = 'Sticker for Macbook user';
+$lang['item_name_2'] = 'Macbook sticker design 02';
+$lang['item_name_3'] = 'Macbook sticker design 03';
+$lang['item_name_4'] = 'Macbook sticker design 04';
+$lang['item_name_5'] = 'Macbook sticker design 05';
+$lang['item_name_6'] = 'Macbook sticker design 06';
+$lang['item_name_7'] = 'Macbook sticker design 07';
+$lang['item_name_8'] = 'Macbook sticker design 08';
