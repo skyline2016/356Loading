@@ -172,16 +172,11 @@ class Shopping extends CI_Controller {
 																	<h4 class="product-name"><strong>Macbook sticker design '.$output[0].'</strong></h4><h4><small>This sticker is for '.$output[1].'" macbook</small></h4>
 																</div>
 																<div class="col-xs-5">
-																	<div class="col-xs-6 text-right">
+																	<div class="col-xs-8 text-right">
 																		<h6><strong>$70.00 <span class="text-muted">x</span></strong></h6>
 																	</div>
 																	<div class="col-xs-4">
-																		<input type="text" class="form-control input-sm" value="'.$value["quantity"].'">
-																	</div>
-																	<div class="col-xs-2">
-																		<button type="button" onclick="delete_item(\''.$item_name.'\')" class="btn btn-link btn-xs">
-																			<span class="glyphicon glyphicon-trash"> </span>
-																		</button>
+																		<input type="text" class="form-control input-sm" value="'.$value["quantity"].'"disabled>
 																	</div>
 																</div>
 															</div>
@@ -198,16 +193,11 @@ class Shopping extends CI_Controller {
 															<h4 class="product-name"><strong>Macbook sticker design (customize)</strong></h4><h4><small>This sticker is design by you</small></h4>
 														</div>
 														<div class="col-xs-5">
-															<div class="col-xs-6 text-right">
+															<div class="col-xs-8 text-right">
 																<h6><strong>$70.00 <span class="text-muted">x</span></strong></h6>
 															</div>
 															<div class="col-xs-4">
-																<input type="text" class="form-control input-sm" value="'.$value["quantity"].'">
-															</div>
-															<div class="col-xs-2">
-																<button type="button" onclick="delete_item(\''.$item_name.'\')" class="btn btn-link btn-xs">
-																	<span class="glyphicon glyphicon-trash"> </span>
-																</button>
+																<input type="text" class="form-control input-sm" value="'.$value["quantity"].'"disabled>
 															</div>
 														</div>
 													</div>
