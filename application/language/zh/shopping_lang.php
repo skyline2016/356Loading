@@ -1,2 +1,2 @@
 <?php
-$lang['shop_title'] = 'Our Design';
+$lang['shop_title'] = '我們的設計';

@@ -1,2 +1,2 @@
 <?php
-$lang['submit'] = 'Submit';
+$lang['submit'] = '提交';
