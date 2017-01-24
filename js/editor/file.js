@@ -22,7 +22,7 @@ openURL = function (self, url) {
 }
 
 saveFile = function () {
-	window.open(app.stage.toDataURL());
+	var img_link=app.stage.toDataURL();
 
 	var formdata = new FormData();
 	formdata.append("img", app.stage.toDataURL());
@@ -35,7 +35,11 @@ saveFile = function () {
 		cache: false,
 		processData:false,
 }).done(function(data){ //
-	swal("Success!", "Your item has been added to cart.", "success");
+swal({
+  title: "Success!",
+  text: "Your design has been added to cart.",
+  imageUrl: img_link
+});
 });
 }
 
