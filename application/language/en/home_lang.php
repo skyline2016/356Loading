@@ -9,6 +9,7 @@ $lang['logout'] = 'Logout';
 $lang['sign_up'] = 'Sign Up Now!';
 $lang['design_sticker'] = 'Design Sticker';
 $lang['shopping'] = 'Our Design';
+$lang['account'] = 'Account';
 //login model
 $lang['username'] = 'Username/E-mail';
 $lang['password'] = 'Password';

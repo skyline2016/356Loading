@@ -47,7 +47,7 @@ foreach ($css_files as $css) {
                     <li class="scroll"><a href="<?php echo base_url() . 'design_sticker'?>"><?php echo lang('design_sticker')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'welcome/lang_switch'?>"><?php if ($current_lang == 'en'){echo '繁中';}else {echo 'English';}?></a></li>
-                    <li class="scroll"><a id="cart" data-toggle="modal" data-target="#cart_modal" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                    <li class="scroll"><a id="cart" data-toggle="modal" data-target="#cart_modal" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i> <?php echo lang('cart')?></a></li>
                 </ul>
             </div>
         </div><!--/.container-->
@@ -60,7 +60,7 @@ foreach ($css_files as $css) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="login_modal">Login</h4>
+        <h4 class="modal-title" id="login_modal"><?php echo lang('login')?></h4>
       </div>
       <div class="modal-body">
     <div class="row">
@@ -70,30 +70,30 @@ foreach ($css_files as $css) {
                     <div class="row">
                         <div class="col-md-12">
                               <div class="form-group">
-                                  <label for="username" class="control-label">Username/E-mail</label>
+                                  <label for="username" class="control-label"><?php echo lang('username')?></label>
                                   <input type="text" class="form-control" name="username" value="" required title="Username/E-mail" placeholder="Username/E-mail" required>
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <label for="password" class="control-label">password <a data-toggle="modal" data-target="#forgot_password" style="cursor:pointer;">(forgot password)</a></label>
-                                  <input type="password" class="form-control" name="password" placeholder="password" value="" required="" title="password" required>
+                                  <label for="password" class="control-label"><?php echo lang('password')?><a data-toggle="modal" data-target="#forgot_password" style="cursor:pointer;"><?php echo lang('forget_password')?></a></label>
+                                  <input type="password" class="form-control" name="password" placeholder="<?php echo lang('password')?>" value="" required="" title="password" required>
                                   <span class="help-block"></span>
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <input id="submit" type="submit" value="Login" class="btn btn-success btn-block" />
+                            <input id="submit" type="submit" value="<?php echo lang('login')?>" class="btn btn-success btn-block" />
                         </div>
                         <div class="col-md-6">
-                            <a href="/register">Register</a>
+                            <a href="/register"><?php echo lang('register')?></a>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
           <div class="col-xs-6">
-              <h5>Login with social network account</h5>
+              <h5><?php echo lang('other_login')?></h5>
                 <ul class="list-unstyled list-social">
                     <li>
                         <a href="#" class="btn btn-lg btn-primary btn-block">
@@ -122,15 +122,15 @@ foreach ($css_files as $css) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Forgot password</h4>
+        <h4 class="modal-title"><?php echo lang('forgot_password')?></h4>
       </div>
       <div class="modal-body">
         <form id="forgot-password-form" action="/login/forgot_password" method="post">
         <div class="row">
           <div class="col-sm-9">
-            <input type="email" name="email" class="form-control" placeholder="Email address" required>
+            <input type="email" name="email" class="form-control" placeholder="<?php echo lang('email')?>" required>
           </div>
-          <input id="submit" type="submit" value="SUBMIT" class="btn btn-primary" />
+          <input id="submit" type="submit" value="<?php echo lang('submit')?>" class="btn btn-primary" />
         </form>
         </div>
       </div>
@@ -147,11 +147,11 @@ foreach ($css_files as $css) {
     					<div class="panel-title">
     						<div class="row">
     							<div class="col-xs-6">
-    								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
+    								<h5><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo lang('shopping_cart')?></h5>
     							</div>
     							<div class="col-xs-6">
     								<button type="button" class="btn btn-primary btn-sm btn-block" data-dismiss="modal" aria-label="Close">
-    									<span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+    									<span class="glyphicon glyphicon-share-alt"></span> <?php echo lang('continue')?>
     								</button>
     							</div>
     						</div>
