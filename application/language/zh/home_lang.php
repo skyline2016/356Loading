@@ -2,11 +2,30 @@
 $lang['pageTitle'] = 'Loading! 開始設計專屬貼紙!';
 $lang['description_1'] = '最好的蘋果產品貼紙平台!';
 $lang['read_more'] = '更多';
+//----header----//
 $lang['home'] = '首頁';
 $lang['login'] = '登入';
+$lang['logout'] = 'Logout';
 $lang['sign_up'] = '現在註冊!';
 $lang['design_sticker'] = '設計貼紙';
 $lang['shopping'] = '我們的設計';
+//login model
+$lang['username'] = '用戶名稱/電郵';
+$lang['password'] = '密碼';
+$lang['confirm_password'] = '確認密碼';
+$lang['forget_password'] = '(忘記密碼)';
+$lang['forgot_password'] = '忘記密碼';
+$lang['register'] = '登記';
+$lang['other_login'] = '以社交帳戶登入';
+$lang['email'] = '電郵';
+$lang['submit'] = '提交';
+$lang['login_warning'] = '請先登入!';
+//cart
+$lang['cart'] = '購物車';
+$lang['shopping_cart'] = '購物車';
+$lang['continue'] = '繼續購物';
+
+//main page
 $lang['description_2'] = '開售!';
 $lang['description_2_detail'] = '大量優惠產品!';
 $lang['how_to_design'] = '如何設計?';
@@ -36,4 +55,15 @@ $lang['company_mission'] = '<p>Loading 旨在為您提供最佳的蘋果貼紙.<
                             <p>我們致力達成以下目標:</p>';
 $lang['mission1'] = '生產優質產品';
 $lang['mission2'] = '讓每個人展現個性';
-$lang['mission3'] = '營造更美好生活';
+$lang['mission3'] = '營造美好生活';
+
+//----------------------item list---------------------------------///
+$lang['item_name_1'] = 'MacBook貼紙 01';
+$lang['item_des'] = 'MacBook貼紙用家';
+$lang['item_name_2'] = 'MacBook貼紙 02';
+$lang['item_name_3'] = 'MacBook貼紙 03';
+$lang['item_name_4'] = 'MacBook貼紙 04';
+$lang['item_name_5'] = 'MacBook貼紙 05';
+$lang['item_name_6'] = 'MacBook貼紙 06';
+$lang['item_name_7'] = 'MacBook貼紙 07';
+$lang['item_name_8'] = 'MacBook貼紙 08';
