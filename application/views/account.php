@@ -15,6 +15,7 @@ foreach ($css_files as $css) {
 <script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 
+<div class="container">
 <div class="well">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
@@ -98,5 +99,7 @@ foreach ($css_files as $css) {
         	</div>
     	</form>
       </div>
-	  
+
   </div>
+</div>
+</div>

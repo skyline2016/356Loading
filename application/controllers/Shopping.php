@@ -48,7 +48,7 @@ class Shopping extends CI_Controller {
 		$this->load->view("item",$pageData);
 	}
 
-	public function cart($action,$remove_item=0)
+	public function cart($action,$remove_item=0,$no_footer=0)
 	{
 		switch ($action) {
 			case 'add':
@@ -103,19 +103,38 @@ class Shopping extends CI_Controller {
 											</div>
 											</div>';
 			}
+			if ($no_footer==0 && $_SESSION["total"]!=0) {
 				echo '    				<div class="panel-footer">
-				    					<div class="row text-center">
-				    						<div class="col-xs-9">
-				    							<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
-				    						</div>
-				    						<div class="col-xs-3">
-				    							<button type="button" class="btn btn-success btn-block">
-				    								Checkout
-				    							</button>
-				    						</div>
-				    					</div>
-				    				</div>
+											<div class="row text-center">
+												<div class="col-xs-9">
+													<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
+												</div>
+												<div class="col-xs-3">
+													<a href="'.base_url().'checkout"><button type="button" class="btn btn-success btn-block">
+														Checkout
+													</button>
+													</a>
+												</div>
+											</div>
+										</div>
 										';
+			}
+			else {
+				echo '    				<div class="panel-footer">
+											<div class="row text-center">
+												<div class="col-xs-9">
+													<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
+												</div>
+												<div class="col-xs-3">
+													<a><button onclick="empty_cart_warning()" type="button" class="btn btn-success btn-block">
+														Checkout
+													</button>
+													</a>
+												</div>
+											</div>
+										</div>
+										';
+			}
 			break;
 			case 'remove':
 			if(!empty($_SESSION["cart_item"]&&$remove_item!=0)) {
