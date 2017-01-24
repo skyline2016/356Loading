@@ -34,8 +34,8 @@ saveFile = function () {
 		contentType: false,
 		cache: false,
 		processData:false,
-}).done(function(res){ //
-
+}).done(function(data){ //
+	swal("Success!", "Your item has been added to cart.", "success");
 });
 }
 

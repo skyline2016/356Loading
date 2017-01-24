@@ -181,8 +181,9 @@ function delete_item(item_name) {
   function(isConfirm){
     if (isConfirm) {
       $.ajax({
-          url: "/shopping/cart/remove/"+item_name,
-          type: "GET",
+          url: "/shopping/cart/remove/",
+          type: "POST",
+          data: {'item_name': item_name},
           success: function(data){
               $("#cart_modal").find(".cart-body").load(baseURL+"shopping/cart/list");
           }

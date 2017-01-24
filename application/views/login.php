@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-xs-6">
             <div class="well">
-                <form id="login-form" action="/login/login" method="POST">
+                <form id="login-warning-form" action="/login/login" method="POST">
                     <div class="row">
                         <div class="col-md-12">
                               <div class="form-group">
@@ -105,7 +105,7 @@
                 type: "POST",
                 data: $("#login-warning-form").serialize(),
                 success: function(data){
-                    window.open("/design_sticker","_self")
+                    window.open(data,"_self")
                 }
             });
        });

@@ -30,7 +30,9 @@ class Login extends CI_Controller {
 
 	public function login(){
 		if($_POST){
-			echo base_url().$_SESSION["page"];
+			if(isset($_SESSION["page"])){
+				echo base_url().$_SESSION["page"];
+			}
 			$_SESSION['login'] = TRUE; // Initializing Session
 			$_SESSION['username']=$_POST['username'];
 		}

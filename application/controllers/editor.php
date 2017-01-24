@@ -35,9 +35,23 @@ class Editor extends CI_Controller {
 		if (!file_exists('./img/'.$_SESSION['username'])) {
 	    mkdir('./img/'.$_SESSION['username'], 0777, true);
 		}
-		$file = fopen("./img/".$_SESSION['username']."/".date('Y_m_d_h_i_s').".png", "wb");
+		$file_name="./img/".$_SESSION['username']."/".date('Y_m_d_h_i_s').".png";
+		$file = fopen($file_name, "wb");
 
 		fwrite($file, $content);
  		fclose($file);
+
+		$itemArray = array($file_name=>array('quantity'=>1));
+		if(!empty($_SESSION["cart_item"])) {
+			if(array_key_exists($file_name,$_SESSION["cart_item"])) {
+				foreach($_SESSION["cart_item"] as $k => $v) {
+					if($item == $k)	$_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
+					}
+				} else $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
+			} else 	$_SESSION["cart_item"] = $itemArray;
+			$_SESSION["total"] += 70;
+
+			echo "<br>";
+			echo var_dump($_SESSION["cart_item"]);
 	}
 }

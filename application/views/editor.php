@@ -28,6 +28,9 @@
 	<script type="text/javascript" src="<?php echo base_url() .'js/editor/filters.js'?>"></script>
 	<!-- Simple Scripting System -->
 	<script type="text/javascript" src="<?php echo base_url() .'js/editor/scripts.js'?>"></script>
+	<!-- Sweet Alert -->
+	<script src="<?php echo base_url()?>js/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>css/sweetalert.css">
 </head>
 <body>
 	<!-- Shade for all Dialogs -->
