@@ -1,8 +1,7 @@
 
 <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="<?php echo base_url()?>js/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>css/sweetalert.css"><style>
+<style>
 .btn-circle {
   width: 30px;
   height: 30px;

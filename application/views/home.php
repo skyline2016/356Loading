@@ -126,8 +126,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_1')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 1</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -137,8 +137,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_2')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 2</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -148,8 +148,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_3')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 3</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -159,8 +159,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_4')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 4</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -170,8 +170,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_5')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 5</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -181,8 +181,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_6')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 5</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -192,8 +192,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_7')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 7</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -203,8 +203,8 @@ foreach ($css_files as $css) {
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3><?php echo lang('item_name_8')?></h3>
-                            <?php echo lang('item_des')?>
+                            <h3>Portfolio Item 8</h3>
+                            Lorem Ipsum Dolor Sit
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>

@@ -48,7 +48,7 @@ class Shopping extends CI_Controller {
 		$this->load->view("item",$pageData);
 	}
 
-	public function cart($action,$remove_item=0,$no_footer=0)
+	public function cart($action,$remove_item=0)
 	{
 		switch ($action) {
 			case 'add':
@@ -65,6 +65,73 @@ class Shopping extends CI_Controller {
 				$_SESSION["total"] += $_POST["quantity"]*70;
 			break;
 			case 'list':
+				if ($_SESSION["total"]!=0) {
+				foreach ($_SESSION["cart_item"] as $item_name => $value) {
+					$output=explode("_", $item_name);
+						if ($value["quantity"]>0) {
+							echo ' 					<div class="panel-body">
+															<div class="row">
+															<div class="col-xs-2"><img class="img-responsive" src="'.base_url().'images/portfolio/'.$output[0].'.jpg" width="100" height="70" >
+															</div>
+															<div class="col-xs-5">
+																<h4 class="product-name"><strong>Macbook sticker design '.$output[0].'</strong></h4><h4><small>This sticker is for '.$output[1].'" macbook</small></h4>
+															</div>
+															<div class="col-xs-5">
+																<div class="col-xs-6 text-right">
+																	<h6><strong>$70.00 <span class="text-muted">x</span></strong></h6>
+																</div>
+																<div class="col-xs-4">
+																	<input type="text" class="form-control input-sm" value="'.$value["quantity"].'">
+																</div>
+																<div class="col-xs-2">
+																	<button type="button" onclick="delete_item(\''.$item_name.'\')" class="btn btn-link btn-xs">
+																		<span class="glyphicon glyphicon-trash"> </span>
+																	</button>
+																</div>
+															</div>
+														</div>
+														<hr>
+														</div>';
+						}
+				}
+				echo '    				<div class="panel-footer">
+											<div class="row text-center">
+												<div class="col-xs-9">
+													<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
+												</div>
+												<div class="col-xs-3">
+													<a href="'.base_url().'checkout"><button type="button" class="btn btn-success btn-block">
+														Checkout
+													</button>
+													</a>
+												</div>
+											</div>
+										</div>
+										';
+			}
+				else {
+				echo ' 					<div class="panel-body">
+												<div class="row">
+												<div class="col-xs-12"><center><strong> There\'s nothing in the cart yet!</strong></center>
+												</div>
+											</div>
+											</div>
+											<div class="panel-footer">
+																		<div class="row text-center">
+																			<div class="col-xs-9">
+																				<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
+																			</div>
+																			<div class="col-xs-3">
+																				<a><button onclick="empty_cart_warning()" type="button" class="btn btn-success btn-block">
+																					Checkout
+																				</button>
+																				</a>
+																			</div>
+																		</div>
+																	</div>';
+			}
+			break;
+			case 'checkout':
 			if ($_SESSION["total"]!=0) {
 				foreach ($_SESSION["cart_item"] as $item_name => $value) {
 					$output=explode("_", $item_name);
@@ -94,6 +161,14 @@ class Shopping extends CI_Controller {
 														</div>';
 						}
 				}
+				echo '    				<div class="panel-footer">
+											<div class="row text-center">
+												<div class="col-xs-12">
+													<h4 class="text-right">Total <strong>$ '.$_SESSION['total'].'</h4>
+												</div>
+											</div>
+										</div>
+										';
 			}
 			else {
 				echo ' 					<div class="panel-body">
@@ -101,39 +176,14 @@ class Shopping extends CI_Controller {
 												<div class="col-xs-12"><center><strong> There\'s nothing in the cart yet!</strong></center>
 												</div>
 											</div>
-											</div>';
-			}
-			if ($no_footer==0 && $_SESSION["total"]!=0) {
-				echo '    				<div class="panel-footer">
-											<div class="row text-center">
-												<div class="col-xs-9">
-													<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
-												</div>
-												<div class="col-xs-3">
-													<a href="'.base_url().'checkout"><button type="button" class="btn btn-success btn-block">
-														Checkout
-													</button>
-													</a>
-												</div>
 											</div>
-										</div>
-										';
-			}
-			else {
-				echo '    				<div class="panel-footer">
-											<div class="row text-center">
-												<div class="col-xs-9">
-													<h4 class="text-right">Total <strong>$'.$_SESSION['total'].'</h4>
-												</div>
-												<div class="col-xs-3">
-													<a><button onclick="empty_cart_warning()" type="button" class="btn btn-success btn-block">
-														Checkout
-													</button>
-													</a>
-												</div>
-											</div>
-										</div>
-										';
+											<div class="panel-footer">
+																		<div class="row text-center">
+																			<div class="col-xs-12">
+																				<h4 class="text-right">Total <strong>$ '.$_SESSION['total'].'</h4>
+																			</div>
+																		</div>
+																	</div>';
 			}
 			break;
 			case 'remove':

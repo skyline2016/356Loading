@@ -28,7 +28,12 @@ class Checkout extends CI_Controller {
 			$this->load->view('checkout',$pageData);
 		}
 		else {
+			$_SESSION["page"]="checkout";
 			echo "<script>window.location = '" . base_url() . "login'</script>";
 		}
+	}
+	public function checkout(){
+			unset($_SESSION["cart_item"]);
+			unset($_SESSION["total"]);
 	}
 }
