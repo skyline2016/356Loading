@@ -31,6 +31,11 @@
                                   <span class="help-block"></span>
                               </div>
                         </div>
+                        <?php if ($_SESSION['error_msg']){
+                          if ($_SESSION['error_msg'] == 3){
+                            echo lang('register_fail');
+                          }
+                        }?>
                     </div>
                     <div class="row">
                         <div class="col-md-4"></div>
@@ -69,7 +74,7 @@
                 type: "POST",
                 data: $("#register-form").serialize(),
                 success: function(data){
-                    window.open("/","_self")
+                    window.location = data;
                 }
             });
        });

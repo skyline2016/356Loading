@@ -27,6 +27,7 @@ class Welcome extends CI_Controller {
 		);
 		$this->load->view('header',$pageData);
 		$this->load->view('home',$pageData);
+		$this->load->view('footer',$pageData);
 	}
 
 	public function lang_switch()

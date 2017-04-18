@@ -21,6 +21,9 @@ $lang['other_login'] = '以社交帳戶登入';
 $lang['email'] = '電郵';
 $lang['submit'] = '提交';
 $lang['login_warning'] = '請先登入!';
+$lang['login_fail'] = '登入失敗';
+$lang['register_fail'] = '登記資料錯誤';
+
 //cart
 $lang['cart'] = '購物車';
 $lang['shopping_cart'] = '購物車';

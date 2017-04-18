@@ -62,7 +62,9 @@
 	 if (empty($_SESSION['user_lang'])){
 		 $_SESSION['user_lang'] = 'en';
 	 }
-
+	 if (empty($_SESSION['error_msg'])){
+	 	$_SESSION['error_msg'] = '';
+	 }
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

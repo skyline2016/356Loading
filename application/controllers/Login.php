@@ -30,11 +30,28 @@ class Login extends CI_Controller {
 
 	public function login(){
 		if($_POST){
-			if(isset($_SESSION["page"])){
-				echo base_url().$_SESSION["page"];
+
+				$this->load->model('User');
+
+			$UserData=array(
+				'account'=>$this->input->post('username'),
+				'password'=>$this->input->post('password')
+			);
+
+			$loginResult=$this->User->login($UserData);
+			if ($loginResult==TRUE) {
+				$_SESSION['login'] = TRUE; // Initializing Session
+				$_SESSION['username']=$_POST['username'];
+				if(isset($_SESSION["page"])){
+					echo base_url().$_SESSION["page"];
+				}
+			}else {
+				$_SESSION['login'] = FALSE;
+				$_SESSION['error_msg'] = 1; //1 for login fail
+				$_SESSION['page'] = "login";
+				echo base_url().$_SESSION['page'];
 			}
-			$_SESSION['login'] = TRUE; // Initializing Session
-			$_SESSION['username']=$_POST['username'];
+
 		}
 		else
 			echo "failed";

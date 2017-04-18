@@ -24,8 +24,10 @@ class Account extends CI_Controller {
 				base_url() . 'css/responsive.css',
 			),
 		);
-		$this->load->view('header',$pageData);	    
+		$this->load->view('header',$pageData);
 	    $this->load->view('account',$pageData);
+			$this->load->view('footer',$pageData);
+
 
 	}
 }

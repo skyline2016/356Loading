@@ -37,12 +37,13 @@ foreach ($css_files as $css) {
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="scroll"><a href="<?php echo base_url()?>"><?php echo lang('home')?></a></li>
-                    <?php if ($_SESSION['login'] == FALSE){
-                      echo '<li class="scroll"><a data-toggle="modal" data-target="#login_modal" style="cursor:pointer;">' . lang('login') . '</a></li>';
-                    } else{
-                      echo '<li class="scroll"><a href="'.base_url() . 'login/logout">Logout</a></li>';
-                      echo '<li class="scroll"><a href="'.base_url().'account">'. lang('account'). '</a></li>';
-                    }
+                    <?php if ($_SESSION['login'] == FALSE){?>
+                      <li class="scroll"><a data-toggle="modal" data-target="#login_modal" style="cursor:pointer;"><?php echo lang('login')?></a></li>
+                    <?php } else{ ?>
+                      <li class="scroll"><a href="<?php echo base_url()?>login/logout"><?php echo lang('logout')?></a></li>
+                      <li class="scroll"><a href="<?php echo base_url()?>account"><?php echo lang('account')?></a></li>
+                    <?php
+                  }
                     ?>
                     <li class="scroll"><a href="<?php echo base_url() . 'design_sticker'?>"><?php echo lang('design_sticker')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
@@ -220,7 +221,7 @@ function empty_cart_warning() {
                 type: "POST",
                 data: $("#login-form").serialize(),
                 success: function(data){
-                    location.reload();
+                    window.location = data;
                 }
             });
        });

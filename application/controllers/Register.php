@@ -30,9 +30,20 @@ class Register extends CI_Controller {
 
 	public function register(){
 		if($_POST){
-			$_SESSION['login'] = TRUE; // Initializing Session
-			$_SESSION['username']=$_POST['username'];
-			echo "success";
+			$this->load->model('User');
+
+			$UserData = array(
+				'username' =>$this->input->post('username'),
+			 	'password' =>$this->input->post('password'),
+			);
+			$regResult=$this->User->register($UserData);
+			if ($regResult==TRUE){
+				$_SESSION['login'] = TRUE; // Initializing Session
+				$_SESSION['username']=$_POST['username'];
+				echo base_url();
+			}else {
+				echo base_url().'/register';
+			}
 		}
 		else
 			echo "failed";

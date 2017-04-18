@@ -111,4 +111,18 @@
        });
     });
 </script>
-<center><font color="red"><?php echo lang('login_warning')?></font><center>
+<?php if ($_SESSION['error_msg']){ ?>
+  <center><font color="red">
+    <?php
+  if ($_SESSION['error_msg'] == 2) {
+    echo lang('login_warning');
+    }
+  if ($_SESSION['error_msg'] == 1){
+    echo lang('login_fail');
+  }
+  unset($_SESSION['error_msg']);
+  ?>
+  </font><center>
+    <?php
+}
+     ?>

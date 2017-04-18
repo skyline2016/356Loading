@@ -26,6 +26,8 @@ class Shopping extends CI_Controller {
 		);
 		$this->load->view('header',$pageData);
 		$this->load->view('shopping',$pageData);
+		$this->load->view('footer',$pageData);
+
 	}
 
 	public function item($item_name)

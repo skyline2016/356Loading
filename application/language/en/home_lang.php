@@ -21,6 +21,8 @@ $lang['other_login'] = 'Login with social network account';
 $lang['email'] = 'Email address';
 $lang['submit'] = 'Submit';
 $lang['login_warning'] = 'Please login before using this function!';
+$lang['login_fail'] = 'Login Failed';
+$lang['register_fail'] = 'Register Information is not correct';
 //cart
 $lang['cart'] = 'Cart';
 $lang['shopping_cart'] = 'Shopping Cart';

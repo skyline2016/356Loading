@@ -30,6 +30,7 @@ class Design_sticker extends CI_Controller {
 		}
 		else {
 			$_SESSION["page"]="design_sticker";
+			$_SESSION['error_msg'] = 2; //2 for login required
 			echo "<script>window.location = '" . base_url() . "login'</script>";
 		}
 	}
