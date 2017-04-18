@@ -79,6 +79,7 @@ $db['default'] = array(
 	'username' => 'sql12168733',
 	'password' => 'BPpNPPjzjd',
 	'database' => 'sql12168733',
+<<<<<<< HEAD
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -122,6 +123,8 @@ $db['read'] = array(
 	'username' => 'sql12168733',
 	'password' => 'BPpNPPjzjd',
 	'database' => 'sql12168733',
+=======
+>>>>>>> 9bc871816b6dc4b829168dc62ed87af8132be71c
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
