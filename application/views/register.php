@@ -17,7 +17,7 @@
                         <div class="col-md-12">
                               <div class="form-group">
                                   <label for="username" class="control-label"><?php echo lang('username')?></label>
-                                  <input type="text" class="form-control" name="username" value="" required title="Username/E-mail" placeholder="<?php echo lang('username')?>" required>
+                                  <input type="text" class="form-control" name="username" value="" required title="E-mail" placeholder="<?php echo lang('username')?>" required>
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
