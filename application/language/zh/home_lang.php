@@ -11,7 +11,7 @@ $lang['design_sticker'] = '設計貼紙';
 $lang['shopping'] = '我們的設計';
 $lang['account'] = '帳戶';
 //login model
-$lang['username'] = '用戶名稱/電郵';
+$lang['username'] = '電郵';
 $lang['password'] = '密碼';
 $lang['confirm_password'] = '確認密碼';
 $lang['forget_password'] = '(忘記密碼)';
