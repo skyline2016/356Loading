@@ -52,6 +52,20 @@ foreach ($css_files as $css) {
                     </div>
                 </div>
             </div><!--/.item-->
+            <div class="item" style="background-image: url(images/517501441.jpg);">
+               <div class="slider-inner">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <div class="carousel-content">
+                                   <h2><span><?php echo lang('description_3')?></span></h2>
+                                   <a class="btn btn-primary btn-lg" href="<?php echo base_url() . 'shopping/item/06'?>"><?php echo lang('description_3_button')?></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div><!--/.item-->
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
 
@@ -292,7 +306,7 @@ foreach ($css_files as $css) {
         </div>
     </section><!--/#bottom-->
 
-  
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -32,6 +32,8 @@ $lang['continue'] = '繼續購物';
 //main page
 $lang['description_2'] = '開售!';
 $lang['description_2_detail'] = '大量優惠產品!';
+$lang['description_3'] = '今期流行貼紙係？';
+$lang['description_3_button'] = '㩒入黎啦';
 $lang['how_to_design'] = '如何設計?';
 $lang['design_des'] = '一試上手! 讓你設計專屬貼紙';
 $lang['design_step_1'] = '上傳你的圖片';

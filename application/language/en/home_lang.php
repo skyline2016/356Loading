@@ -32,6 +32,8 @@ $lang['continue'] = 'Continue Shopping';
 //main page
 $lang['description_2'] = 'Sales now!';
 $lang['description_2_detail'] = 'Whole brunch of designs are having discount!';
+$lang['description_3'] = 'The Best Selling<br>this week is??';
+$lang['description_3_button'] = 'Check out here';
 $lang['how_to_design'] = 'how to design';
 $lang['design_des'] = 'Easy steps to design and buy your own sticker!';
 $lang['design_step_1'] = 'Import your image';
