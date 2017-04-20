@@ -140,7 +140,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_1')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -151,7 +151,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_2')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -162,7 +162,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_3')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -173,7 +173,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_4')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -184,7 +184,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_5')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -195,7 +195,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_6')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -206,7 +206,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_7')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -217,7 +217,7 @@ foreach ($css_files as $css) {
                         <div class="portfolio-info">
                             <h3><?php echo lang('item_name_8')?></h3>
                             <?php echo lang('item_des')?>
-                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
