@@ -49,6 +49,7 @@ foreach ($css_files as $css) {
                     <li class="scroll"><a href="<?php echo base_url() . 'shopping'?>"><?php echo lang('shopping')?></a></li>
                     <li class="scroll"><a href="<?php echo base_url() . 'welcome/lang_switch'?>"><?php if ($current_lang == 'en'){echo '繁中';}else {echo 'English';}?></a></li>
                     <li class="scroll"><a id="cart" data-toggle="modal" data-target="#cart_modal" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i> <?php echo lang('cart')?></a></li>
+                    <li class="scroll"><a href="<?php echo base_url() . 'faq'?>" target="_blank"><?php echo lang('faq')?></a></li>
                 </ul>
             </div>
         </div><!--/.container-->

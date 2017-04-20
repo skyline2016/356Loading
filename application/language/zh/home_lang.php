@@ -29,6 +29,9 @@ $lang['cart'] = '購物車';
 $lang['shopping_cart'] = '購物車';
 $lang['continue'] = '繼續購物';
 
+//faq
+$lang['faq'] = '常見問題';
+
 //main page
 $lang['description_2'] = '開售!';
 $lang['description_2_detail'] = '大量優惠產品!';

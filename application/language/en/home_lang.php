@@ -23,11 +23,14 @@ $lang['submit'] = 'Submit';
 $lang['login_warning'] = 'Please login before using this function!';
 $lang['login_fail'] = 'Login Failed';
 $lang['register_fail'] = 'Register Information is not correct';
+
 //cart
 $lang['cart'] = 'Cart';
 $lang['shopping_cart'] = 'Shopping Cart';
 $lang['continue'] = 'Continue Shopping';
 
+//faq
+$lang['faq'] = 'FAQ';
 
 //main page
 $lang['description_2'] = 'Sales now!';
