@@ -66,12 +66,24 @@ class Shopping extends CI_Controller {
 				} else 	$_SESSION["cart_item"] = $itemArray;
 				$_SESSION["total"] += $_POST["quantity"]*70;
 			break;
+			case 'modify':
+				if(!empty($_SESSION["cart_item"])&&isset($_POST['item_name'])&&isset($_POST['quantity'])) {
+				foreach($_SESSION["cart_item"] as $k => $v) {
+						if($_POST['item_name'] == $k){
+							$_SESSION["total"]-=$_SESSION["cart_item"][$k]["quantity"]*70;
+							$_SESSION["cart_item"][$k]["quantity"] = $_POST['quantity'];
+							$_SESSION["total"]+=$_SESSION["cart_item"][$k]["quantity"]*70;
+						}
+					}
+				}
+			break;
 			case 'list':
 				if ($_SESSION["total"]!=0) {
 				foreach ($_SESSION["cart_item"] as $item_name => $value) {
 					if (strlen($item_name)<14) {
 						$output=explode("_", $item_name);
 							if ($value["quantity"]>0) {
+								$identifier = str_replace(' ', '', "cart_item_".$output[0]);
 								echo ' 					<div class="panel-body">
 																<div class="row">
 																<div class="col-xs-2"><img class="img-responsive" src="'.base_url().'images/portfolio/'.$output[0].'.jpg" width="100" height="70" >
@@ -84,7 +96,7 @@ class Shopping extends CI_Controller {
 																		<h6><strong>$70.00 <span class="text-muted">x</span></strong></h6>
 																	</div>
 																	<div class="col-xs-4">
-																		<input type="text" class="form-control input-sm" value="'.$value["quantity"].'">
+																		<input type="text" class="form-control input-sm" id="'.$item_name.'" onchange= "change_quantity(\''.$item_name.'\')" value="'.$value["quantity"].'">
 																	</div>
 																	<div class="col-xs-2">
 																		<button type="button" onclick="delete_item(\''.$item_name.'\')" class="btn btn-link btn-xs">

@@ -167,6 +167,14 @@ foreach ($css_files as $css) {
 </div><!-- /.modal -->
 <?php echo '<script>var baseURL = "'. base_url() . '";</script>'; ?>
 <script>
+function change_quantity(item_name) {
+  var quantity = $('#'+item_name).val();
+  $.ajax({
+      url: "/shopping/cart/modify/",
+      type: "POST",
+      data: {'item_name': item_name, 'quantity': quantity},
+  });
+}
 
 function delete_item(item_name) {
   swal({

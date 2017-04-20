@@ -197,7 +197,7 @@
         </div>
          <div class="row">
           <div class="col-md-12">
-             <a class="btn btn-default btn-circle btn-lg">U</a> User_01 | Sep 21,2016
+             <a class="btn btn-default btn-circle btn-lg">U</a> User_ <?php echo(rand(10,100)); ?> | Sep 21,2016
           </div>
          </div>
          <div class="col-md-12">
