@@ -18,45 +18,45 @@ foreach ($css_files as $css) {
 <div class="container">
 <div class="well">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
-      <li><a href="#profile" data-toggle="tab">Change Info</a></li>
+      <li class="active"><a href="#home" data-toggle="tab"><?php echo lang('profile')?></a></li>
+      <li><a href="#profile" data-toggle="tab"><?php echo lang('change')?></a></li>
     </ul>
     <div id="account-tab" class="tab-content">
       <div class="tab-pane active in" id="home">
         <div class="panel panel-info">
-                        <div class="panel-heading"><span><i class="glyphicon glyphicon-user"></i></span> User Profile</div>
+                        <div class="panel-heading"><span><i class="glyphicon glyphicon-user"></i></span> <?php echo lang('user_profile')?></div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Username:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('username')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" name="username" value="jsmith" disabled/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-6 col-xs-12">
-                                    <strong>First Name:</strong>
+                                    <strong><?php echo lang('firstname')?></strong>
                                     <input type="text" name="first_name" class="form-control" value="john" disabled/>
                                 </div>
                                 <div class="span1"></div>
                                 <div class="col-md-6 col-xs-12">
-                                    <strong>Last Name:</strong>
+                                    <strong><?php echo lang('lastname')?></strong>
                                     <input type="text" name="last_name" class="form-control" value="smith" disabled/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Email:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('email')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="email" class="form-control" value="jsmith@ex.com" disabled/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Address:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('address')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="address" class="form-control" value="" disabled/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Zip Code:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('zipcode')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="zip-code" class="form-control" value="333333" disabled/>
                                 </div>
@@ -67,45 +67,45 @@ foreach ($css_files as $css) {
 
       <div class="tab-pane fade" id="profile">
         <div class="panel panel-info">
-                        <div class="panel-heading"><span><i class="glyphicon glyphicon-user"></i></span> User Profile</div>
+                        <div class="panel-heading"><span><i class="glyphicon glyphicon-user"></i></span> <?php echo lang('user_profile')?></div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Username:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('username')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" name="username" value="jsmith"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-6 col-xs-12">
-                                    <strong>First Name:</strong>
+                                    <strong><?php echo lang('firstname')?></strong>
                                     <input type="text" name="first_name" class="form-control" value="john"/>
                                 </div>
                                 <div class="span1"></div>
                                 <div class="col-md-6 col-xs-12">
-                                    <strong>Last Name:</strong>
+                                    <strong><?php echo lang('lastname')?></strong>
                                     <input type="text" name="last_name" class="form-control" value="smith"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Email:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('email')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="email" class="form-control" value="jsmith@ex.com"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Address:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('address')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="address" class="form-control" value=""/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Zip Code:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('zipcode')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="zip-code" class="form-control" value="333333"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                              <div class="col-md-12"><strong>Time Zone:</strong></div>
+                              <div class="col-md-12"><strong><?php echo lang('timezone')?></strong></div>
                               <div class="col-md-12">
                               <select class="form-control" id="time-zone">
                                 <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
@@ -143,14 +143,14 @@ foreach ($css_files as $css) {
                               </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>New password:</strong></div>
+                                <div class="col-md-12"><strong><?php echo lang('new_password')?></strong></div>
                                 <div class="col-md-12">
                                     <input type="password" name="password" class="form-control" value=""/>
                                 </div>
                             </div>
                             <div class="col-md-12">
                               <br>
-                            <button class="btn btn-primary" onclick="update_info()" style="float: right;">Update</button>
+                            <button class="btn btn-primary" onclick="update_info()" style="float: right;"><?php echo lang('update')?></button>
                             </div>
                         </div>
                     </div>
