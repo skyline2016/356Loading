@@ -238,7 +238,7 @@ foreach ($css_files as $css) {
                     <h3 class="column-title"><?php echo lang('video_intro')?></h3>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VD7kb778sqU" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/Yf4IwxVlvcw" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
