@@ -11,8 +11,8 @@ foreach ($css_files as $css) {
             </div>
             <div class="col-sm-6">
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/Loading356/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCXb1n3Nob6nh0XRj0nX0Q-g"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
