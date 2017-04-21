@@ -132,36 +132,36 @@
 				<div class="row">
 					<div class="col-md-16">
 						<div class="faq">
-							<h3></h3>
-							<p>
+							<strong>Privacy Policy</strong><br><br>
+							Last updated: 2017/4/19
 
-								Thanks for shopping at Loading.com.
+							Loading Company  ("us", "we", or "our") operates this site . This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.<br>
 
-								If you are not entirely satisfied with your purchase, we're here to help.<br>
+							We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.<br><br>
 
-<strong>Returns</strong><br>
 
-While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you.<br>
+							<strong>Information Collection And Use</strong><br><br>
+							While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to your name ("Personal Information").<br><br>
 
-<strong>Refunds</strong><br>
+							<strong>Log Data</strong><br><br>
+							Like many site operators, we collect information that your browser sends whenever you visit our Site ("Log Data").<br><br>
 
-Once we receive your item, we will inspect it and notify you that we have received your returned
-item. We will immediately notify you on the status of your refund after inspecting the item.<br>
+							This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages and other statistics.<br><br>
 
-If your return is approved, we will initiate a refund to your credit card (or original method of payment).<br>
+							<strong>Cookies</strong><br><br>
+							Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are used by us to streamline and enhance your ordering experience. In order to use our online store, you must have cookies enabled at all times.<br>
 
-You will receive the credit within a certain amount of days, depending on your card issuer's policies.<br>
+							Like many sites, we use "cookies" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.<br>
 
-<strong>Shipping</strong><br>
+							For specific instructions on how to enable cookies, please select your browser: Microsoft Internet Explorer, Mozilla Firefox , Opera, or Apple Safari.<br><br>
 
-You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non­refundable.<br>
+							<strong>Changes To This Privacy Policy</strong><br><br>
+							This Privacy Policy is effective as of (2017/4/19) and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.<br>
 
-If you receive a refund, the cost of return shipping will be deducted from your refund.
-<br>
+							We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.<br>
 
-<strong>Contact Us</strong><br>
+							If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.<br>
 
-If you have any questions on how to return your item to us, contact us.<br></p>
 						</div>
 
 
